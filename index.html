@@ -1,10 +1,139 @@
 <html>
 <head>
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/swj1viv.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" type="text/tailwindcss" href="index.css">
+  <style type="text/tailwindcss">
+    @theme {
+      --font-primary: "aktiv-grotesk-extended", sans-serif;
+      --font-primary-thin: "aktiv-grotesk", sans-serif;
+      --color-primary: white;
+      --color-unfocused: #B8C7C9;
+      --color-accent-from: #FF441F;
+      --color-accent-to: #EA1836;
+    }
+  </style>
 </head>
 <body>
+
+
+<nav class="bg-white">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="hidden grow-1 md:block"></div>
+    <a href="/" class="flex justify-center items-center space-x-3 rtl:space-x-reverse grow-2">
+      <img src="images/GMG_Full_Logo.png" class="h-8" alt="Gumer Media Group Logo" />
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm md:hidden hover:bg-unfocused focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+        <li>
+          <a href="#" class="block py-2 px-3 text-black font-primary font-extrabold text-xs uppercase md:p-0" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-unfocused font-primary font-extrabold text-xs uppercase hover:bg-gray-100 md:p-0 md:hover:bg-transparent">Work</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-unfocused font-primary font-extrabold text-xs uppercase hover:bg-gray-100 md:p-0 md:hover:bg-transparent">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <main>
-  <p>Gumer's Broadcasting Site</p>
+  <div class="relative w-full bg-linear-45 from-accent-from via-10% to-accent-to flex flex-col items-end">
+    <div class="aspect-video w-3/3 md:w-2/3">
+      <div class="w-full h-full bg-black opacity-5">
+      </div>
+    </div>
+    <div class="absolute inset-y-16 inset-x-[10%] w-full flex flex-col justify-center items-start leading-8">
+      <p class="text-white font-primary font-extrabold text-xl md:text-4xl uppercase leading-16">ENCAPTIVATING HEADER</p>
+      <p class="text-white font-primary-thin font-semibold text-md md:text-l">Subtext and flavor to embellish the current hot topic.</p>
+    </div>
+  </div>
+  <div class="mx-4 px-4 py-16 bg-linear-to-b from-50% from-[#B8C7C9] to-white md:px-14">
+    <h2 class="text-white font-primary font-extrabold text-4xl pb-16 text-center">CLIENTS</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="w-full rounded-xl overflow-hidden border border-white">
+        <div class="grayscale-100 hover:grayscale-0 transition transition-filter duration-300">
+          <img src="/images/Partner_1.png" class="w-full" />
+        </div>
+        <div class="bg-white pl-12 pr-8 py-4 flex flex-row justify-between items-center">
+          <div class="flex flex-row gap-12">
+            <a href="/"><img src="/images/GMG_G_Logo.png" alt="Gumer Media Group Logo" class="w-8 h-8"/></a>
+            <p class="font-primary font-extrabold text-2xl uppercase">CLIENT NAME</p>
+          </div>
+          <div class="rounded-full px-8 py-4 bg-blue-500 bg-linear-to-r from-[#8DE4FF] to-[#70BEF2] font-primary font-extrabold text-black text-2xl">
+            OPTIONAL
+          </div>
+        </div>
+      </div>
+      <div class="w-full rounded-xl overflow-hidden border border-white">
+        <div class="grayscale-100 hover:grayscale-0 transition transition-filter duration-300">
+          <img src="/images/Partner_1.png" class="w-full" />
+        </div>
+        <div class="bg-white pl-12 pr-8 py-4 flex flex-row justify-between items-center">
+          <div class="flex flex-row gap-12">
+            <a href="/"><img src="/images/GMG_G_Logo.png" alt="Gumer Media Group Logo" class="w-8 h-8"/></a>
+            <p class="font-primary font-extrabold text-2xl uppercase">CLIENT NAME</p>
+          </div>
+          <div class="rounded-full px-8 py-4 bg-blue-500 bg-linear-to-r from-[#8DE4FF] to-[#70BEF2] font-primary font-extrabold text-black text-2xl">
+            OPTIONAL
+          </div>
+        </div>
+      </div>
+      <div class="w-full rounded-xl overflow-hidden border border-white">
+        <div class="grayscale-100 hover:grayscale-0 transition transition-filter duration-300">
+          <img src="/images/Partner_1.png" class="w-full" />
+        </div>
+        <div class="bg-white pl-12 pr-8 py-4 flex flex-row justify-between items-center">
+          <div class="flex flex-row gap-12">
+            <a href="/"><img src="/images/GMG_G_Logo.png" alt="Gumer Media Group Logo" class="w-8 h-8"/></a>
+            <p class="font-primary font-extrabold text-2xl uppercase">CLIENT NAME</p>
+          </div>
+          <div class="rounded-full px-8 py-4 bg-blue-500 bg-linear-to-r from-[#8DE4FF] to-[#70BEF2] font-primary font-extrabold text-black text-2xl">
+            OPTIONAL
+          </div>
+        </div>
+      </div>
+      <div class="w-full rounded-xl overflow-hidden border border-white">
+        <div class="grayscale-100 hover:grayscale-0 transition transition-filter duration-300">
+          <img src="/images/Partner_1.png" class="w-full" />
+        </div>
+        <div class="bg-white pl-12 pr-8 py-4 flex flex-row justify-between items-center">
+          <div class="flex flex-row gap-12">
+            <a href="/"><img src="/images/GMG_G_Logo.png" alt="Gumer Media Group Logo" class="w-8 h-8"/></a>
+            <p class="font-primary font-extrabold text-2xl uppercase">CLIENT NAME</p>
+          </div>
+          <div class="rounded-full px-8 py-4 bg-blue-500 bg-linear-to-r from-[#8DE4FF] to-[#70BEF2] font-primary font-extrabold text-black text-2xl">
+            OPTIONAL
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-linear-to-r from-[#8DE4FF] to-[#70BEF2] px-16 py-8 md:py-24">
+    <div class="grid grid-cols-1 justify-between md:grid-cols-2 gap-4">
+      <div class="flex flex-row justify-center items-center gap-16 md:justify-start">
+        <a href="/"><img src="/images/GMG_G_Logo.png" alt="Gumer Media Group Logo" /></a>
+        <a href="https://x.com/gumergg"><img src="/images/X_Logo.png" alt="X.com Logo" /></a>
+        <a href="https://twitch.tv/gumergg"><img src="/images/Twitch_Logo.png" alt="Twitch.tv Logo"/></a>
+        <a href="https://youtube.com/c/gumer"><img src="/images/YT_Logo.png" alt="Youtube Logo" /></a>
+      </div>
+      <div class="flex flex-col gap-2 text-center md:text-right md:justify-end md:items-end">
+        <a href="partners" class="font-primary font-extrabold underline">PARTNER PORTAL</a>
+        <a href="press" class="font-primary font-extrabold underline">PRESS KIT</a>
+      </div>
+    </div>
+  </footer>
 </main>  
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.js"></script>
 </body>
 </html>
